@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Font Demo</title>
+  <meta name="description" content="Web development">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Your Name">
+
+  <!-- Font Google Anton -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      width: 500px;
+      margin: auto;
+    }
+
+    header {
+      color: black;
+      background-color: yellow;
+      height: 2em;
+      margin-bottom: 20px;
+      font-weight: bold;
+      font-size: 2em;
+      text-align: center;
+      line-height: 2em;
+      box-shadow: 3px 3px 10px grey;
+    }
+
+    article {
+      font-size: 40px;
+      border: solid black;
+      font-weight: bold;
+    }
+
+    section {
+      border: solid red;
+      margin-bottom: 20px;
+      font-size: 50%;
+    }
+
+    #imgtext {
+      width: 100%;                /* full width để không rớt dòng */
+      font-family: 'Anton', sans-serif;
+      font-size: 2.5em;           /* giảm cỡ font cho vừa khung */
+      font-weight: 900;
+      text-shadow: 1px 1px 0 #000;
+      letter-spacing: 2px;
+      word-spacing: 4px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    aside {
+      float: right;
+      width: 35%;
+      padding-left: 5px;
+      border: solid green;
+      font-size: 10px;
+      font-style: italic;
+      color: green;
+    }
+
+    footer {
+      border: solid blue;
+      clear: both;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>This is the <strong>header</strong> element.</header>
+
+  <article>
+    This is the <strong>article</strong> element.
+
+    <section>
+      <ol>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+      </ol>
+      This is the <strong>section</strong> element.
+    </section>
+
+    <!-- IMAGE TEXT -->
+    <section id="imgtext">
+      IMAGE TEXT
+    </section>
+
+    <!-- Sidebar -->
+    <aside>
+      More about cloud computing:
+      <p>
+        <a href="#">Cloud Computing with Google</a><br />
+        <a href="#">Cloud Computing with Amazon</a><br />
+        <a href="#">Cloud Computing with Microsoft</a>
+      </p>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+      This is a footer.
+    </footer>
+  </article>
+
+</body>
+</html>
