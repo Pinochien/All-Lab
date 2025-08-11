@@ -1,0 +1,59 @@
+/* Canh giữa các phần tử có class "center" */
+.center {
+    text-align: center;
+}
+
+/* Định dạng cho toàn bộ body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Định dạng cho form chính */
+form#msgform {
+    width: 80%;
+    max-width: 500px; /* Giới hạn chiều rộng tối đa */
+    margin: 20px auto; /* Tự động căn giữa form */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Bo góc cho mềm mại */
+    background-color: #ffffff;
+}
+
+/* Định dạng cho các nhóm trong form (label và input) */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Định dạng cho nhãn (label) */
+.form-group label {
+    display: block; /* Hiển thị trên một dòng riêng */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Định dạng cho ô nhập liệu và textarea */
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%; /* Chiếm toàn bộ chiều rộng của cha */
+    padding: 8px;
+    box-sizing: border-box; /* Giúp padding không ảnh hưởng đến kích thước */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Định dạng cho nút submit */
+.form-group input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; /* Biến con trỏ thành hình bàn tay */
+    font-size: 16px;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #0056b3; /* Đổi màu khi di chuột qua */
+}

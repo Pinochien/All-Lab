@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web development" />
+    <meta name="keywords" content="Registration Form" />
+    <meta name="author" content="Your Name" />
+    <title>Web Development Registration Form</title>
+    
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="validation.js"></script>
+</head>
+<body>
+
+    <div class="form-container">
+        <form id="regform" method="post" action="#" novalidate>
+            
+            <fieldset>
+                <legend>
+                    <a class="collapse" href="#">[-]</a> 
+                    Thông tin tài khoản
+                </legend>
+                <div class="fieldset-content">
+                    <div class="form-group">
+                        <label for="sid">User ID (Email)</label>
+                        <input id="sid" type="email" name="sid" placeholder="ví dụ: a@domain.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd1">Mật khẩu</label>
+                        <input id="pwd1" type="password" name="pwd1" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd2">Nhập lại mật khẩu</label>
+                        <input id="pwd2" type="password" name="pwd2" required />
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <a class="collapse" href="#">[-]</a> 
+                    Thông tin người dùng
+                </legend>
+                <div class="fieldset-content">
+                    <div class="form-group">
+                        <label for="uname">Họ và tên</label>
+                        <input id="uname" type="text" name="uname" placeholder="Chỉ nhập chữ cái và khoảng trắng" required />
+                    </div>
+                    <div class="form-group">
+                        <label>Giới tính</label>
+                        <div class="radio-group">
+                            <input id="genm" type="radio" name="gender" value="M" />
+                            <label for="genm">Nam</label>
+                            <input id="genf" type="radio" name="gender" value="F" />
+                            <label for="genf">Nữ</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="button-group">
+                <input type="submit" value="Đăng ký" />
+            </div>
+        </form>
+    </div>
+
+    <div id="scrnOverlay"></div>
+    <section id="errWin" class="window">
+        <h4>Vui lòng sửa các lỗi sau:</h4>
+        <ul id="error-list">
+            </ul>
+        <a href="#" id="errBtn" class="button">Đóng</a>
+    </section>
+
+</body>
+</html>
