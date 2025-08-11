@@ -1,0 +1,17 @@
+.tooltip {
+  display: none;          /* tool tips are initially not visible */
+  position: relative;     /* place tooltip according to the order in the HTML */
+  background-color: blue; /* uses a blue background */
+  border-radius: 5px;     /* create a rounded corner */
+  text-align: center;     /* center text inside the tooltip */
+  padding: 5px;           /* add a 5px spacing around the text */
+  left: 1em;              /* position the tooltip at 1em from the left */
+}
+
+.tooltip:after {
+  position: absolute;     /* set an absolute position to be specified */
+  top: 10px;              /* specify the absolute top position */
+  border-style: solid;    /* specify solid border style */
+  height: 0px;            /* set height to 0px */
+  width: 0px;             /* set width to 0px */
+}
