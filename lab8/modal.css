@@ -1,0 +1,35 @@
+.button {
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: lightgrey;
+  padding: 0.25em;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: darkgrey;
+}
+.window {
+  display: none;
+  z-index: 2;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -5em;
+  margin-left: -11em;
+  background-color: lightblue;
+  border-radius: 5px;
+  padding: 5px;
+  width: 22em;
+  height: 10em;
+}
+#scrnOverlay {
+  visibility: hidden;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: grey;
+  opacity: 0.5;
+}
