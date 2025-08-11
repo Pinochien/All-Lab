@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Development Registration Form</title>
+  <style>
+    /* ---------- Desktop Style (min-width: 1024px) ---------- */
+    @media screen and (min-width: 1024px) {
+      body {
+        color: red;
+        font-size: 100%;
+      }
+    }
+
+    /* ---------- Mobile Style (max-width: 480px) ---------- */
+    @media screen and (max-width: 480px) {
+      form {
+        font-size: 200%; /* Tăng kích thước chữ */
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 40px;
+        margin-bottom: 0;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      input[type="radio"] {
+        width: 15%;
+      }
+
+      button {
+        width: 40%;
+      }
+
+      #test-button-container {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Registration Form</h1>
+
+  <h2>Account Information</h2>
+  <form>
+    <p>User ID <input type="text" name="userid"></p>
+    <p>Password <input type="password" name="password"></p>
+    <p>Retype Password <input type="password" name="retype_password"></p>
+
+    <h2>User Information</h2>
+    <p>Name <input type="text" name="name"></p>
+    <p>Gender
+      <input type="radio" name="gender" value="male"> Male
+      <input type="radio" name="gender" value="female"> Female
+    </p>
+
+    <div id="test-button-container">
+      <button type="submit">Test Register</button>
+    </div>
+  </form>
+</body>
+</html>

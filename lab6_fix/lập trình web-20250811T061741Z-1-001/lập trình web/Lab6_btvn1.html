@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Metric to Imperial Unit Converter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f0f4f8;
+    }
+    h1 {
+      text-align: center;
+    }
+    .converter {
+      background: white;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 400px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label, input, button {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    .result {
+      font-weight: bold;
+      color: #333;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Unit Converter</h1>
+
+  <!-- Temperature Converter -->
+  <div class="converter">
+    <h2>Celsius to Fahrenheit</h2>
+    <label for="celsius">Celsius:</label>
+    <input type="number" id="celsius" placeholder="Enter temperature in °C">
+    <button onclick="convertTemp()">Convert</button>
+    <div class="result" id="fahrenheitResult"></div>
+  </div>
+
+  <!-- Weight Converter -->
+  <div class="converter">
+    <h2>Kilograms to Pounds</h2>
+    <label for="kilograms">Kilograms:</label>
+    <input type="number" id="kilograms" placeholder="Enter weight in kg">
+    <button onclick="convertWeight()">Convert</button>
+    <div class="result" id="poundsResult"></div>
+  </div>
+
+  <!-- Distance Converter -->
+  <div class="converter">
+    <h2>Kilometers to Miles</h2>
+    <label for="kilometers">Kilometers:</label>
+    <input type="number" id="kilometers" placeholder="Enter distance in km">
+    <button onclick="convertDistance()">Convert</button>
+    <div class="result" id="milesResult"></div>
+  </div>
+
+  <script>
+    function convertTemp() {
+      const celsius = parseFloat(document.getElementById('celsius').value);
+      if (!isNaN(celsius)) {
+        const fahrenheit = (celsius * 9/5) + 32;
+        document.getElementById('fahrenheitResult').innerText = `${fahrenheit.toFixed(2)} °F`;
+      } else {
+        document.getElementById('fahrenheitResult').innerText = "Please enter a valid number.";
+      }
+    }
+
+    function convertWeight() {
+      const kg = parseFloat(document.getElementById('kilograms').value);
+      if (!isNaN(kg)) {
+        const pounds = kg * 2.20462;
+        document.getElementById('poundsResult').innerText = `${pounds.toFixed(2)} lbs`;
+      } else {
+        document.getElementById('poundsResult').innerText = "Please enter a valid number.";
+      }
+    }
+
+    function convertDistance() {
+      const km = parseFloat(document.getElementById('kilometers').value);
+      if (!isNaN(km)) {
+        const miles = km * 0.621371;
+        document.getElementById('milesResult').innerText = `${miles.toFixed(2)} miles`;
+      } else {
+        document.getElementById('milesResult').innerText = "Please enter a valid number.";
+      }
+    }
+  </script>
+
+</body>
+</html>
