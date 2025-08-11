@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fruit Information Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to the World of Fruits!</h1>
+    <p>Learn about delicious fruits, their prices, and nutritional value. You can also submit your favorite!</p>
+
+    <!-- Form Section -->
+    <h2>Submit Your Favorite Fruit</h2>
+    <form action="submit.php" method="POST">
+        <input type="text" name="username" placeholder="Enter your name" required><br><br>
+        <input type="email" name="email" placeholder="Enter your email" required><br><br>
+        <input type="text" name="favorite_fruit" placeholder="Your favorite fruit" required><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Table Section -->
+    <h2>Fruit Price List</h2>
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Fruit</th>
+            <th>Price (USD)</th>
+            <th>Quantity (per kg)</th>
+        </tr>
+        <tr>
+            <td>Apple</td>
+            <td>$2.00</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Banana</td>
+            <td>$1.20</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Mango</td>
+            <td>$2.50</td>
+            <td>8</td>
+        </tr>
+    </table>
+
+    <!-- Lists -->
+    <h2>Top 3 Most Popular Fruits</h2>
+    <ol>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Apple</li>
+    </ol>
+
+    <h2>Fruits Rich in Vitamin C</h2>
+    <ul>
+        <li>Orange</li>
+        <li>Kiwi</li>
+        <li>Strawberry</li>
+    </ul>
+
+    <!-- Image Section -->
+    <h2>Fruit Gallery</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg" alt="Red Apple" width="300">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg" alt="Banana" width="300">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg" alt="Mango" width="300">
+
+    <!-- Video Section -->
+    <h2>Fruit Nutrition Video</h2>
+    <video width="560" height="315" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+</body>
+</html>

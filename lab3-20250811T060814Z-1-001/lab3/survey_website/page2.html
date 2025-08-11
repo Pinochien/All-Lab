@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Web development" />
+  <meta name="keywords" content="HTML (Part 1 – Content – Form)" />
+  <meta name="author" content="Your Name" />
+  <title>Web Development Survey</title>
+</head>
+<body>
+  <h1>Unit Delivery Survey</h1>
+  <form method="post" action="surveytest.php">
+    <p><label>Full Name (optional)
+      <input type="text" name="fname" size="20" />
+    </label></p>
+
+    <p>Gender<br />
+      <label>Male <input type="radio" name="gender" value="M" /></label>
+      <label>Female <input type="radio" name="gender" value="F" /></label>
+    </p>
+
+    <p>Degree Program:
+      <select name="program">
+        <option value="IT">IT</option>
+        <option value="Finance">Finance</option>
+        <option value="Design">Design</option>
+      </select>
+    </p>
+
+    <p>
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </p>
+  </form>
+  <p><a href="page1.html">Previous</a> <a href="page3.html">Next</a></p>
+</body>
+</html>
