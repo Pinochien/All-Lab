@@ -1,0 +1,46 @@
+form {
+    width: 40em;
+}
+
+label {
+    float: left;
+    text-align: right;
+    width: 10em;
+    margin-right: 1em;
+}
+
+input {
+    width: 50%;
+}
+
+.textinput {
+    margin: 10px;
+}
+
+.radioinput fieldset {
+    border: none;
+}
+
+.radioinput legend {
+    float: left;
+    text-align: right;
+    width: 9em;
+    margin-right: 1em;
+}
+
+.radioinput input {
+    width: 2em;
+}
+
+.radioinput label {
+    float: none;
+    text-align: left;
+}
+
+.buttoninput {
+    text-align: right;
+}
+
+.buttoninput input {
+    width: auto;
+}
